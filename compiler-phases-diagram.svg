@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" width="900" height="1100" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a237e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#283593;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="phaseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#bbdefb;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="inputGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e8f5e9;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c8e6c9;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="outputGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fff3e0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffe0b2;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="sideGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fce4ec;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f8bbd0;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="106%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000033"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#424242"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="1100" rx="12" fill="#f5f5f5" stroke="#e0e0e0" stroke-width="2"/>
+
+  <!-- Title -->
+  <rect x="150" y="20" width="600" height="60" rx="10" fill="url(#headerGrad)" filter="url(#shadow)"/>
+  <text x="450" y="58" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="700" letter-spacing="1">Phases of a Compiler</text>
+
+  <!-- Source Code (Input) -->
+  <rect x="250" y="105" width="400" height="50" rx="8" fill="url(#inputGrad)" stroke="#2e7d32" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="136" text-anchor="middle" fill="#1b5e20" font-size="20" font-weight="700">Source Code</text>
+
+  <!-- Arrow 1 -->
+  <line x1="450" y1="155" x2="450" y2="185" stroke="#424242" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Phase 1: Lexical Analysis -->
+  <rect x="250" y="185" width="400" height="65" rx="8" fill="url(#phaseGrad)" stroke="#1565c0" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="214" text-anchor="middle" fill="#0d47a1" font-size="19" font-weight="700">1. Lexical Analysis</text>
+  <text x="450" y="238" text-anchor="middle" fill="#1565c0" font-size="14" font-weight="500">(Scanner / Tokenizer)</text>
+
+  <!-- Arrow 2 -->
+  <line x1="450" y1="250" x2="450" y2="275" stroke="#424242" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Phase 2: Syntax Analysis -->
+  <rect x="250" y="275" width="400" height="65" rx="8" fill="url(#phaseGrad)" stroke="#1565c0" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="304" text-anchor="middle" fill="#0d47a1" font-size="19" font-weight="700">2. Syntax Analysis</text>
+  <text x="450" y="328" text-anchor="middle" fill="#1565c0" font-size="14" font-weight="500">(Parser / Parse Tree Generation)</text>
+
+  <!-- Arrow 3 -->
+  <line x1="450" y1="340" x2="450" y2="365" stroke="#424242" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Phase 3: Semantic Analysis -->
+  <rect x="250" y="365" width="400" height="65" rx="8" fill="url(#phaseGrad)" stroke="#1565c0" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="394" text-anchor="middle" fill="#0d47a1" font-size="19" font-weight="700">3. Semantic Analysis</text>
+  <text x="450" y="418" text-anchor="middle" fill="#1565c0" font-size="14" font-weight="500">(Type Checking / Scope Resolution)</text>
+
+  <!-- Arrow 4 -->
+  <line x1="450" y1="430" x2="450" y2="455" stroke="#424242" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Phase 4: Intermediate Code Generation -->
+  <rect x="250" y="455" width="400" height="65" rx="8" fill="url(#phaseGrad)" stroke="#1565c0" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="484" text-anchor="middle" fill="#0d47a1" font-size="19" font-weight="700">4. Intermediate Code Generation</text>
+  <text x="450" y="508" text-anchor="middle" fill="#1565c0" font-size="14" font-weight="500">(Three-Address Code / IR)</text>
+
+  <!-- Arrow 5 -->
+  <line x1="450" y1="520" x2="450" y2="545" stroke="#424242" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Phase 5: Code Optimization -->
+  <rect x="250" y="545" width="400" height="65" rx="8" fill="url(#phaseGrad)" stroke="#1565c0" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="574" text-anchor="middle" fill="#0d47a1" font-size="19" font-weight="700">5. Code Optimization</text>
+  <text x="450" y="598" text-anchor="middle" fill="#1565c0" font-size="14" font-weight="500">(Loop Optimization / Dead Code Elimination)</text>
+
+  <!-- Arrow 6 -->
+  <line x1="450" y1="610" x2="450" y2="635" stroke="#424242" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Phase 6: Code Generation -->
+  <rect x="250" y="635" width="400" height="65" rx="8" fill="url(#phaseGrad)" stroke="#1565c0" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="664" text-anchor="middle" fill="#0d47a1" font-size="19" font-weight="700">6. Code Generation</text>
+  <text x="450" y="688" text-anchor="middle" fill="#1565c0" font-size="14" font-weight="500">(Target Machine Code Generation)</text>
+
+  <!-- Arrow 7 -->
+  <line x1="450" y1="700" x2="450" y2="730" stroke="#424242" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Target Code (Output) -->
+  <rect x="250" y="730" width="400" height="50" rx="8" fill="url(#outputGrad)" stroke="#e65100" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="761" text-anchor="middle" fill="#bf360c" font-size="20" font-weight="700">Target Code</text>
+
+  <!-- Symbol Table (Left Side) -->
+  <rect x="30" y="185" width="190" height="515" rx="8" fill="url(#sideGrad)" stroke="#c62828" stroke-width="2" filter="url(#shadow)"/>
+  <text x="125" y="215" text-anchor="middle" fill="#b71c1c" font-size="18" font-weight="700">Symbol Table</text>
+  <text x="125" y="240" text-anchor="middle" fill="#c62828" font-size="13" font-weight="500">Manager</text>
+  <line x1="55" y1="255" x2="195" y2="255" stroke="#e57373" stroke-width="1.5"/>
+  <text x="125" y="280" text-anchor="middle" fill="#424242" font-size="13" font-weight="600">Stores:</text>
+  <text x="125" y="302" text-anchor="middle" fill="#616161" font-size="12" font-weight="500">• Variable Names</text>
+  <text x="125" y="322" text-anchor="middle" fill="#616161" font-size="12" font-weight="500">• Data Types</text>
+  <text x="125" y="342" text-anchor="middle" fill="#616161" font-size="12" font-weight="500">• Scope Information</text>
+  <text x="125" y="362" text-anchor="middle" fill="#616161" font-size="12" font-weight="500">• Memory Locations</text>
+  <text x="125" y="382" text-anchor="middle" fill="#616161" font-size="12" font-weight="500">• Function Signatures</text>
+  <text x="125" y="402" text-anchor="middle" fill="#616161" font-size="12" font-weight="500">• Constants</text>
+
+  <!-- Connecting lines from Symbol Table to phases -->
+  <line x1="220" y1="217" x2="250" y2="217" stroke="#c62828" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <line x1="220" y1="307" x2="250" y2="307" stroke="#c62828" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <line x1="220" y1="397" x2="250" y2="397" stroke="#c62828" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <line x1="220" y1="487" x2="250" y2="487" stroke="#c62828" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <line x1="220" y1="577" x2="250" y2="577" stroke="#c62828" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <line x1="220" y1="667" x2="250" y2="667" stroke="#c62828" stroke-width="1.5" stroke-dasharray="6,3"/>
+
+  <!-- Error Handler (Right Side) -->
+  <rect x="680" y="185" width="190" height="515" rx="8" fill="url(#sideGrad)" stroke="#c62828" stroke-width="2" filter="url(#shadow)"/>
+  <text x="775" y="215" text-anchor="middle" fill="#b71c1c" font-size="18" font-weight="700">Error Handler</text>
+  <line x1="705" y1="230" x2="845" y2="230" stroke="#e57373" stroke-width="1.5"/>
+  <text x="775" y="255" text-anchor="middle" fill="#424242" font-size="13" font-weight="600">Detects:</text>
+  <text x="775" y="277" text-anchor="middle" fill="#616161" font-size="12" font-weight="500">• Lexical Errors</text>
+  <text x="775" y="297" text-anchor="middle" fill="#616161" font-size="12" font-weight="500">• Syntax Errors</text>
+  <text x="775" y="317" text-anchor="middle" fill="#616161" font-size="12" font-weight="500">• Semantic Errors</text>
+  <text x="775" y="337" text-anchor="middle" fill="#616161" font-size="12" font-weight="500">• Type Mismatch</text>
+  <text x="775" y="357" text-anchor="middle" fill="#616161" font-size="12" font-weight="500">• Undeclared Variables</text>
+  <text x="775" y="377" text-anchor="middle" fill="#616161" font-size="12" font-weight="500">• Runtime Errors</text>
+
+  <!-- Connecting lines from Error Handler to phases -->
+  <line x1="650" y1="217" x2="680" y2="217" stroke="#c62828" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <line x1="650" y1="307" x2="680" y2="307" stroke="#c62828" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <line x1="650" y1="397" x2="680" y2="397" stroke="#c62828" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <line x1="650" y1="487" x2="680" y2="487" stroke="#c62828" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <line x1="650" y1="577" x2="680" y2="577" stroke="#c62828" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <line x1="650" y1="667" x2="680" y2="667" stroke="#c62828" stroke-width="1.5" stroke-dasharray="6,3"/>
+
+  <!-- Example Section -->
+  <rect x="50" y="810" width="800" height="260" rx="10" fill="#ffffff" stroke="#9e9e9e" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="845" text-anchor="middle" fill="#1a237e" font-size="22" font-weight="700">Example: Compiling "int x = 5 + 3;"</text>
+  <line x1="80" y1="860" x2="820" y2="860" stroke="#e0e0e0" stroke-width="1.5"/>
+
+  <!-- Example steps -->
+  <text x="80" y="892" fill="#0d47a1" font-size="15" font-weight="700">1. Lexical Analysis:</text>
+  <text x="290" y="892" fill="#424242" font-size="14" font-weight="500">Tokens → [int] [x] [=] [5] [+] [3] [;]</text>
+
+  <text x="80" y="920" fill="#0d47a1" font-size="15" font-weight="700">2. Syntax Analysis:</text>
+  <text x="290" y="920" fill="#424242" font-size="14" font-weight="500">Parse Tree → Declaration(Type:int, Var:x, Expr:Add(5,3))</text>
+
+  <text x="80" y="948" fill="#0d47a1" font-size="15" font-weight="700">3. Semantic Analysis:</text>
+  <text x="290" y="948" fill="#424242" font-size="14" font-weight="500">Type Check → int = int + int ✓ (Valid)</text>
+
+  <text x="80" y="976" fill="#0d47a1" font-size="15" font-weight="700">4. Intermediate Code:</text>
+  <text x="290" y="976" fill="#424242" font-size="14" font-weight="500">t1 = 5 + 3; x = t1;</text>
+
+  <text x="80" y="1004" fill="#0d47a1" font-size="15" font-weight="700">5. Code Optimization:</text>
+  <text x="290" y="1004" fill="#424242" font-size="14" font-weight="500">x = 8 (Constant Folding Applied)</text>
+
+  <text x="80" y="1032" fill="#0d47a1" font-size="15" font-weight="700">6. Code Generation:</text>
+  <text x="290" y="1032" fill="#424242" font-size="14" font-weight="500">MOV R1, #8; STORE R1, x</text>
+</svg>
