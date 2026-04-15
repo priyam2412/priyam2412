@@ -15,6 +15,9 @@
 ### ✍ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
+# 📐 Phases of a Compiler
+![Phases of a Compiler](compiler-phases-diagram.svg)
+
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 
 <!--
