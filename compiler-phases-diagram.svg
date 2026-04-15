@@ -23,6 +23,9 @@
     <filter id="shadow" x="-3%" y="-3%" width="106%" height="106%">
       <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000033"/>
     </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#424242"/>
+    </marker>
   </defs>
 
   <!-- Background -->
@@ -155,11 +158,4 @@
 
   <text x="80" y="1032" fill="#0d47a1" font-size="15" font-weight="700">6. Code Generation:</text>
   <text x="290" y="1032" fill="#424242" font-size="14" font-weight="500">MOV R1, #8; STORE R1, x</text>
-
-  <!-- Arrowhead marker -->
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#424242"/>
-    </marker>
-  </defs>
 </svg>
